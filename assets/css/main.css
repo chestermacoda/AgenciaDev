@@ -853,18 +853,27 @@ section,
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
-.section-title {
+.section-header {
   text-align: center;
-  padding-bottom: 60px;
-  position: relative;
+  padding-bottom: 40px;
 }
 
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 300;
   margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  color: var(--heading-color);
+}
+
+.section-header p {
+  margin: 0 auto;
+  color: var(--default-color);
+}
+
+@media (min-width: 1280px) {
+  .section-header p {
+    max-width: 80%;
+  }
 }
 
 .section-title h2:after {
